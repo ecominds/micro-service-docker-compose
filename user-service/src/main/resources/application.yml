@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:./h2-data/user_service_api
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:
+        ddl-auto: update
+    show-sql: true
+    properties:
+        hibernate.format_sql: false
+  h2:
+    console.enabled: true
+
+server:
+  shutdown: graceful
+  port: 8082
+
+ecominds: 
+  endpoint: 
+    dept-service: 
+      base-path: http://localhost:8081/api/departments/
