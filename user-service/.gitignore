@@ -30,6 +30,3 @@ hs_err_pid*
 
 # Ignore Intellij generated files
 .idea/
-
-#Ignore h2 data file
-*/h2-data

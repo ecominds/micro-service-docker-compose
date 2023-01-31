@@ -33,7 +33,7 @@ public class DepartmentServiceImpl implements IDepartmentService {
 
 		setupCode(entity);
 
-		entity.setRecordId(0L); // Let the framework generate the recordId
+		entity.setRecordId(null); // Let the framework generate the recordId
 
 		Optional<Department> savedEnity = repo.findByCode(entity.getCode());
 		if (savedEnity.isPresent()) {
