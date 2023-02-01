@@ -80,6 +80,7 @@ public class UserServiceImpl implements IUserService{
 	
 	private DeptInfoVO getDeptInfo(Long deptId) {
 		try {
+			log.info("Accessing: " + deptServiceBaseUrl);
 			return restTemplate.getForObject(deptServiceBaseUrl + deptId, DeptInfoVO.class);
 		}catch(RestClientException ex) {
 			handleRestException(ex);
