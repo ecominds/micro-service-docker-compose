@@ -160,3 +160,6 @@ services:
 ## Build and run the services
 1. Execute the command `docker-compose build` to build the images
 2. Execute `docker-compose up -d` to start the service. Tag `-d` is supplied to run the services in *detached mode*
+
+### Ref Links:
+https://forums.docker.com/t/localhost-and-docker-compose-networking-issue/23100/5
