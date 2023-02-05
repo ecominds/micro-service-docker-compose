@@ -1,4 +1,4 @@
-# docker-compose-test
+# micro-service-docker-compose
 A repository to test the `docker-compose`
 
 ## Get code from micro-service
@@ -15,7 +15,7 @@ $ cd ..
 $ mv micro-service dept-service
 ```
 
-2. Copy the above `dept-service` from temp to this project `docker-compose-test`
+2. Copy the above `dept-service` from temp to this project `micro-service-docker-compose`
 
 3. Change the name ref to `dept-service` in `pom.xml`
 ```
@@ -27,8 +27,8 @@ $ mv micro-service dept-service
 Also,
 ```
 <scm>
-	<connection>scm:git:git://github.com/ecominds/docker-compose-test.git</connection>
-	<developerConnection>scm:git:git@github.com:ecominds/docker-compose-test.git</developerConnection>
-	<url>https://github.com/ecominds/docker-compose-test</url>
+	<connection>scm:git:git://github.com/ecominds/micro-service-docker-compose.git</connection>
+	<developerConnection>scm:git:git@github.com:ecominds/micro-service-docker-compose.git</developerConnection>
+	<url>https://github.com/ecominds/micro-service-docker-compose</url>
 </scm>
 ```
