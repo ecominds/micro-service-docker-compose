@@ -1,4 +1,4 @@
-# docker-compose-test
+# micro-service-docker-compose
 A repository to test the `docker-compose`
 
 ## Get code from micro-service
