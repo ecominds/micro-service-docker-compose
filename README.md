@@ -1,4 +1,4 @@
-# docker-compose-test
+# micro-service-docker-compose
 A repository to test the `docker-compose`
 
 ## Get code from micro-service
@@ -15,7 +15,7 @@ $ cd ..
 $ mv micro-service dept-service
 ```
 
-2. Copy the above `dept-service` from temp to this project `docker-compose-test`
+2. Copy the above `dept-service` from temp to this project `micro-service-docker-compose`
 
 3. Change the name ref to `dept-service` in `pom.xml`
 ```
@@ -27,9 +27,9 @@ $ mv micro-service dept-service
 Also,
 ```
 <scm>
-	<connection>scm:git:git://github.com/ecominds/docker-compose-test.git</connection>
-	<developerConnection>scm:git:git@github.com:ecominds/docker-compose-test.git</developerConnection>
-	<url>https://github.com/ecominds/docker-compose-test</url>
+	<connection>scm:git:git://github.com/ecominds/micro-service-docker-compose.git</connection>
+	<developerConnection>scm:git:git@github.com:ecominds/micro-service-docker-compose.git</developerConnection>
+	<url>https://github.com/ecominds/micro-service-docker-compose</url>
 </scm>
 ```
 
@@ -43,10 +43,10 @@ Also,
 4. Create docker images
 ```
 # Create dept-service docker image
-docker-compose-test $ docker build -t dept-service .\dept-service\
+micro-service-docker-compose $ docker build -t dept-service .\dept-service\
 
 #Create user-service docker image
-docker-compose-test $ docker build -t user-service .\user-service\
+micro-service-docker-compose $ docker build -t user-service .\user-service\
 ```
 
 5. Execute the below command to create a custom network `dev-env-net` if it is not available
